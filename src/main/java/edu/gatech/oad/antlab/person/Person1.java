@@ -31,7 +31,18 @@ public class Person1 {
 	 */
 	private String calc(String input) {
 	  //Person 1 put your implementation here
-	  return null;
+	  String result = "";
+      String end = "";
+      int len = input.length();
+      for (int i = 0; i < len; i++) {
+        if (i - 2 < 0) {
+            end += input.charAt(i);
+        } else {
+            result += input.charAt(i);
+        }
+      }
+      result += end;
+      return result;
 	}
 	
 	/**
